@@ -22,26 +22,33 @@ logo.style.color = "brown";
 
 // I STYLED THE ANCHOR TAGS
 
-const anchorTags = document.querySelector(".nav-link");
+const anchorTags = document.querySelectorAll(".nav-link");
 console.log(anchorTags);
-anchorTags.style.border = "1px solid black";
-anchorTags.style.width = "80px";
-anchorTags.style.paddingLeft = "15px";
-anchorTags.style.paddingTop = "6px";
-anchorTags.style.backgroundColor = "crimson";
-anchorTags.style.height = "30px";
 
-anchorTags.addEventListener("onfocus", event => {
-  console.log(`Clicked`);
-});
+for (let i = 0; i < anchorTags.length; i++) {
+  anchorTags[i].style.border = "1px solid black";
+  anchorTags[i].style.width = "88px";
+  anchorTags[i].style.paddingLeft = "15px";
+  anchorTags[i].style.paddingTop = "6px";
+  anchorTags[i].style.backgroundColor = "crimson";
+  anchorTags[i].style.height = "40px";
+  anchorTags[i].style.marginRight = "5px";
 
-//
+  anchorTags[i].addEventListener("click", event => {
+    console.log(`Clicked`);
+  });
+}
 
-const button = document.querySelector(".btn");
+const button = document.querySelectorAll(".btn");
 console.log(button);
-button.style.color = 'black';
-button.style.backgroundColor = '#00008b'
-button.addEventListener("dblclick", event => {
-  alert(`THANK YOU FOR SIGNING UP`);
-});
+for (let i = 0; i < button.length; i++) {
+  button[i].style.color = "black";
+  button[i].style.backgroundColor = "#00008b";
 
+  button[i].addEventListener("dblclick", event => {
+    alert(`THANK YOU FOR SIGNING UP`);
+  });
+}
+
+const container = document.querySelector(".container home");
+console.log();
