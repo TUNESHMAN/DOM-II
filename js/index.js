@@ -50,5 +50,30 @@ for (let i = 0; i < button.length; i++) {
   });
 }
 
-const container = document.querySelector(".container home");
-console.log();
+// const container = document.querySelector(".container home");
+// console.log();
+
+const subHeader = document.querySelectorAll("h2");
+for (let i = 0; i < subHeader.length; i++) {
+  subHeader[i].style.color = "#A9A9A9";
+  subHeader[i].style.fontFamily = "Arial";
+
+  // subHeader[i].addEventListener('ondrag', (event)=>{
+  //     console.log(`Drag me!`);
+
+  // })
+}
+
+const smallHeader = document.querySelectorAll('h4');
+for (let i = 0; i < smallHeader.length; i++) {
+    smallHeader[i].style.color = "black";
+    smallHeader[i].style.fontStyle = "Oblique";
+    smallHeader[i].style.border = "1px solid black";
+    smallHeader[i].style.textAlign = "center";
+    smallHeader[i].style.borderRadius = "5px";
+    smallHeader[i].style.paddingTop = "7px";
+    smallHeader[i].style.backgroundColor = "red";
+    
+
+    
+}
