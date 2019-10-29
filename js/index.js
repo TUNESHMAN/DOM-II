@@ -35,10 +35,8 @@ for (let i = 0; i < anchorTags.length; i++) {
   anchorTags[i].style.marginRight = "5px";
 
   anchorTags[i].addEventListener("click", event => {
-    console.log(`Clicked`);
+    event.preventDefault();
   });
-
-  //   event.preventDefault();
 }
 
 const button = document.querySelectorAll(".btn");
