@@ -77,7 +77,15 @@ for (let i = 0; i < smallHeader.length; i++) {
 
 const images = document.querySelectorAll("img");
 for (let i = 0; i < images.length; i++) {
-  images[i].addEventListener("drag", () => {
+  images[i].addEventListener("drag", event => {
     console.log(`Picture is dragged`);
   });
 }
+
+const frame = document.querySelector("footer");
+// console.log(frame);
+
+frame.style.backgroundColor = "gray";
+frame.addEventListener("select", event => {
+  console.log(`I have moved`);
+});
