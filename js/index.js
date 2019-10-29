@@ -37,6 +37,8 @@ for (let i = 0; i < anchorTags.length; i++) {
   anchorTags[i].addEventListener("click", event => {
     console.log(`Clicked`);
   });
+
+  //   event.preventDefault();
 }
 
 const button = document.querySelectorAll(".btn");
@@ -71,10 +73,13 @@ for (let i = 0; i < smallHeader.length; i++) {
   smallHeader[i].style.backgroundColor = "red";
 
   smallHeader[i].addEventListener("mouseenter", () => {
-      alert(`The mouse is here`);
-      
-  })
-
+    alert(`The mouse is here`);
+  });
 }
-// const container = document.querySelector(".container home");
-// console.log();
+
+const images = document.querySelectorAll("img");
+for (let i = 0; i < images.length; i++) {
+  images[i].addEventListener("drag", () => {
+    console.log(`Picture is dragged`);
+  });
+}
