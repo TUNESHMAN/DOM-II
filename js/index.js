@@ -89,3 +89,6 @@ frame.style.backgroundColor = "gray";
 frame.addEventListener("select", event => {
   console.log(`I have moved`);
 });
+
+const outer = document.querySelector('body');
+outer.style.backgroundColor = '#ccc';
